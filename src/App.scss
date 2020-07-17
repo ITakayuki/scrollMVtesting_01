@@ -1,0 +1,35 @@
+.App {
+  width: 100vw;
+  height: 100vw;
+    .text-wrapper{
+      width: 30%;
+      height: 50%;
+      margin: 0 auto;
+      overflow: hidden;
+      .scroller{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+
+        #text{
+          width: 50%;
+          margin:0 auto;
+          color: #fff;
+          word-wrap: break-word;
+        }
+        .contant{
+          background-color: rgba(0,0,0,0);
+          color: red;
+        }
+        .mv{
+          height: 100%;
+          background-image: url("./mv-sp.jpg");
+          background-position: bottom;
+          overflow: auto;
+          &::-webkit-scrollbar{
+            display: none;
+          }
+        }
+      }
+    }
+}
